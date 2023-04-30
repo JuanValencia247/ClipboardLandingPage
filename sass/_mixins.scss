@@ -1,0 +1,21 @@
+@use 'variables' as v;
+@mixin btn ($c, $mb: unset, $hc, $sc){
+    width: 310px;
+    height: 58px;
+    background-color: $c;
+    margin-bottom: $mb;
+    border-radius: 50px;
+    color: white;
+    transition: 300ms;
+    border: none;
+    font-size: 1.1em;
+    box-shadow: 0 4px $sc;
+    border: 1px solid $sc;
+    &:hover{
+        cursor: pointer;
+        background-color: $hc;
+    }
+    @media (min-width: 1000px) {
+      
+      }
+}
